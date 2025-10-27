@@ -35,4 +35,13 @@ Each control code corresponds to one operation:
 
 ## Simulated Output 
 
-![image alt]()
+![image alt](https://github.com/VenkataSaiCharanMirdoddy/VLSI-PROJECTS/blob/main/SIMULATED%20OUTPUT.png?raw=true)
+
+## Conclusion
+
+The 4-bit ALU designed in Verilog successfully performs 16 arithmetic and logical operations.
+Simulation results validate its correctness and demonstrate the use of combinational logic through case statements.
+The design serves as a strong foundation for extending to higher-bit ALUs or adding flags like carry, zero, and overflow.
+
+## Author
+Venkata Sai Charan Mirdoddy
