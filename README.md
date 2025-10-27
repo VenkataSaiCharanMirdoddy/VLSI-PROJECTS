@@ -31,3 +31,8 @@ Each control code corresponds to one operation:
 
 ## Block Diagram
 
+![image alt](https://github.com/VenkataSaiCharanMirdoddy/VLSI-PROJECTS/blob/main/BLOCK%20DIAGRAM.png?raw=true)
+
+## Simulated Output 
+
+![image alt]()
