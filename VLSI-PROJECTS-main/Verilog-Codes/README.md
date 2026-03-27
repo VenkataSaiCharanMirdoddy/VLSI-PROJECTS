@@ -1,4 +1,4 @@
-# VLSI-PROJECTS
+# ALU Using Verilog 
 
 ## Project Overview
 
@@ -31,11 +31,11 @@ Each control code corresponds to one operation:
 
 ## Block Diagram
 
-![image alt](https://github.com/VenkataSaiCharanMirdoddy/VLSI-PROJECTS/blob/main/Verilog-Codes/BLOCK%20DIAGRAM.png?raw=true)
+![image alt](https://github.com/VenkataSaiCharanMirdoddy/VLSI-PROJECTS-main/blob/main/Verilog-Codes/BLOCK%20DIAGRAM.png?raw=true)
 
 ## Simulated Output 
 
-![image alt](https://github.com/VenkataSaiCharanMirdoddy/VLSI-PROJECTS/blob/main/Verilog-Codes/SIMULATED%20OUTPUT.png?raw=true)
+![image alt](https://github.com/VenkataSaiCharanMirdoddy/VLSI-PROJECTS-main/blob/main/Verilog-Codes/SIMULATED%20OUTPUT.png?raw=true)
 
 ## Conclusion
 
