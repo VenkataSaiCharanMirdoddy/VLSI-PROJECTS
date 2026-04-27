@@ -42,7 +42,7 @@ The following characteristics are analyzed:
 ## 6. Results and Discussion
 
 ### 6.1 DC Transfer Characteristics
-![DC Analysis](./images/dc_analysis.png)
+![DC Analysis](https://github.com/VenkataSaiCharanMirdoddy/VLSI-PROJECTS/raw/main/VLSI-PROJECTS-main/cadence-virtuoso/6T%20SRAM%20Cell%20Design/dc_analysis.png)
 * Demonstrates inverter characteristics within the SRAM cell
 * Clear **transition region near VDD/2 (~0.9 V)**
 * Confirms strong regenerative feedback
