@@ -9,4 +9,7 @@ This folder contains my analog VLSI designs implemented using Cadence Virtuoso.
 - Layout Design
 - Simulation Results
 
-(More projects will be added soon)
+### 2. 6T SRAM CELL DESIGN
+- Schematic Design
+- DC Analysis
+- DC Response
