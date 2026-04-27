@@ -49,7 +49,7 @@ The following characteristics are analyzed:
 
 ### 6.2 Node Voltage Response
 
-![DC Response](./images/dc_response.png)
+![DC Response](https://github.com/VenkataSaiCharanMirdoddy/VLSI-PROJECTS/raw/main/VLSI-PROJECTS-main/cadence-virtuoso/6T%20SRAM%20Cell%20Design/dc_response.png)
 * Shows variation of `NODE-1` and `NODE-2` with input sweep
 * Confirms **complementary switching behavior**
 * Validates correct bistable operation of the cell
