@@ -26,7 +26,9 @@ The conventional 6T SRAM cell consists of:
 
 
 ## 4. Schematic Implementation
-![SRAM Schematic](./images/sram_schematic.png)
+## Schematic
+
+![6T SRAM Schematic](https://github.com/VenkataSaiCharanMirdoddy/VLSI-PROJECTS/raw/main/VLSI-PROJECTS-main/cadence-virtuoso/6T%20SRAM%20Cell%20Design/sram_schematic.png)
 The schematic shows:
 * Cross-coupled PMOS and NMOS transistors forming a latch
 * Access transistors connecting storage nodes to bit lines
