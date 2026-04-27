@@ -1,0 +1,59 @@
+6T SRAM Cell Design using Cadence Virtuoso
+Overview
+
+This project presents the design and simulation of a 6-Transistor Static Random Access Memory (6T SRAM) cell using Cadence Virtuoso. The design demonstrates fundamental memory cell behavior including read/write operations and stability analysis through DC simulations.
+
+The 6T SRAM cell is widely used in modern memory architectures due to its high speed, low power consumption, and robust performance.
+
+Tools & Technology
+Cadence Virtuoso (Schematic & Simulation)
+CMOS Technology (45nm / gpdk45)
+Analog Design Environment (ADE)
+DC Analysis
+SRAM Cell Architecture
+
+The 6T SRAM cell consists of:
+2 Cross-Coupled Inverters (4 Transistors)
+2 Access Transistors (controlled by Word Line - WL)
+Key Nodes:
+NODE-1 → Q
+NODE-2 → Q̅
+Control Signals:
+WL → Word Line
+BL → Bit Line
+BLBAR → Complementary Bit Line
+Schematic
+
+Simulation Results
+🔹 DC Transfer Characteristics
+
+Shows voltage transfer between storage nodes
+Used to evaluate cell stability
+Helps in identifying switching threshold
+🔹 DC Response
+
+Displays relationship between input sweep and node voltages
+Confirms correct inverter action and bistability
+Key Observations
+The SRAM cell exhibits bistable behavior
+Proper switching occurs near ~0.9V (VDD/2)
+Strong noise margin ensures stable operation
+Cross-coupled inverters maintain stored data effectively
+Applications
+Cache memory (L1, L2, L3)
+Register files in processors
+Embedded memory in SoCs
+Learning Outcomes
+Understanding SRAM cell operation
+Hands-on experience with Cadence Virtuoso
+DC analysis and stability verification
+CMOS design fundamentals
+Future Improvements
+Perform Transient Analysis (Read/Write operations)
+Calculate Static Noise Margin (SNM)
+Power analysis and optimization
+Layout design and DRC/LVS verification
+Author
+
+Sai Charan
+ECE Student | VLSI & Embedded Systems Enthusiast
