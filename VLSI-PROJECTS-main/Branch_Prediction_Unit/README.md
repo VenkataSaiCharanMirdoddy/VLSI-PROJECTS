@@ -56,29 +56,6 @@ A 4-bit GHR (Global History Register) two-level adaptive branch predictor with a
 
 ---
 
-## Repository Structure
-
-```
-├── rtl/
-│   └── Advanced_MultiCycle_Top.v       # Synthesizable RTL (top module + 5 submodules)
-├── testbench/
-│   └── tb_Advanced_MultiCycle_Top.v    # Functional testbench
-├── reports/
-│   ├── area_report.txt                 # Genus post-synthesis area report
-│   ├── power_report.txt                # Genus post-synthesis power report
-│   └── timing_report.txt               # Genus post-synthesis timing report
-├── screenshots/
-│   ├── genus_schematic.png             # Synthesized gate-level schematic (Genus)
-│   ├── final_layout_innovus.png        # Final routed layout (Innovus)
-│   └── waveform_sim_*.png              # SimVision functional simulation waveforms
-├── docs/
-│   ├── project_report.pdf              # Full project report: achievements, challenges & fixes
-│   └── flow_guide.pdf                  # Step-by-step RTL-to-GDSII flow guide (Cadence)
-└── README.md
-```
-
----
-
 ## Design Modules
 
 | Module | Description |
@@ -112,7 +89,7 @@ A 4-bit GHR (Global History Register) two-level adaptive branch predictor with a
 | Total Power | 0.729 mW |
 | Worst Setup Slack | 6508 ps (MET) |
 
-Full reports: [`area_report.txt`](.area_report.txt) · [`power_report.txt`](.power_report.txt) · [`timing_report.txt`](.timing_report.txt)
+Full reports: [`area_report.txt`](area_report.txt) · [`power_report.txt`](power_report.txt) · [`timing_report.txt`](timing_report.txt)
 
 ### Physical Design (Cadence Innovus)
 
@@ -125,12 +102,12 @@ Full reports: [`area_report.txt`](.area_report.txt) · [`power_report.txt`](.pow
 
 ## Key Design Fixes Applied
 
-During synthesis, two RTL constructs required correction for tool compatibility (see inline comments in [`rtl/Advanced_MultiCycle_Top.v`](.Advanced_MultiCycle_Top.v)):
+During synthesis, two RTL constructs required correction for tool compatibility (see inline comments in [`Advanced_MultiCycle_Top.v`](Advanced_MultiCycle_Top.v)):
 
 1. **`multi_cycle_pipeline` reset logic** — an async-reset-sensitive always block originally combined `if (reset || flush)`, mixing a sensitivity-list signal with a non-listed one in the same branch. This caused synthesis elaboration errors (`CDFG-364` in Genus). Fixed by splitting into separate `if (reset) ... else if (flush) ...` branches.
 2. **`pattern1` initializer** — an inline register initializer (`reg [10:0] pattern1 = ...`) was silently ignored during synthesis (`VLOGPT-37` in Genus), meaning the register would power up undefined in real silicon. Fixed by converting `pattern1` to a `localparam`, since its value is constant at runtime.
 
-Full writeup of challenges and resolutions: [`docs/project_report.pdf`](.project_report.pdf)
+Full writeup of challenges and resolutions: [`project_report.pdf`](project_report.pdf)
 
 ---
 
